@@ -49,3 +49,5 @@ Q(Physics): Why the nuclear fission is stable? How to control it?
 Q(Biology): Why does mule cannot breed?
 
 
+Q: How to append new content to existing file?
+A: for example, cat "hello new line" >> existing_file

@@ -20,6 +20,8 @@ Q: How does Linux work?
 
 	Q: What is the working principle of wine?
 
+	Q: What is udev?
+
 Q: How does C++ realize OOP?
 
 	Q: What is template in C++?
@@ -49,5 +51,6 @@ Q(Physics): Why the nuclear fission is stable? How to control it?
 Q(Biology): Why does mule cannot breed?
 
 
-Q: How to append new content to existing file?
-A: for example, cat "hello new line" >> existing_file
+	Q: How to append new content to existing file?
+	A: for example, cat "hello new line" >> existing_file
+

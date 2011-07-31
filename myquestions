@@ -5,8 +5,48 @@ Q: How does computer work? What is the principle?
 
 Q: How does Linux work?
 
-Q: How does irq work?
+	Q: What is ELF? What is the difference between it and Windows' file format?
 
-Q: What is ELF? What is the difference between it and Windows' file format?
+	Q: How to apply multi-threads method on printing A and B simultaneously?
 
+	Q: How to port Linux to a new hardware?
+	
+	Q: How does irq work?
 
+Q: How does C++ realize OOP?
+
+	Q: What is template in C++?
+
+Q: How to solve the sound problem(no sound within Vmware) of Vmware? 
+
+Q: How does qv4l2 work? Can I learn something from it?
+
+Q: How to get the coordinate of N900 touch panel?
+
+Q: How to static link Qt exe file? So that we don't need the related DLL files.
+
+Q(Physics): How is the gravity field twisted?
+
+Q: Where is N900's serial port?
+
+Q: How to make a GTK program?
+
+Q: How to make a Java program?
+
+Q: How to make a Qt container program?
+
+Q: How to use aircrack to get the WIFI password?
+
+Q: What is the working principle of wine?
+
+Q: What is the working principle of watch dog?
+
+Q(Rescue): How to do self-protect in the earthquake?
+
+Q(Physics): What is the conversion efficiency of the solar cell?
+
+Q(Biology): Why does mule cannot breed?
+
+Q: What is Qt Texture?
+
+Q(Physics): Why the nuclear fission is stable? How to control it?

@@ -1,38 +1,38 @@
+No question, no aspiration to study
+
 Q: How does computer work? What is the principle?
 
 Q: How does Linux work?
 
-	Q: What is ELF? What is the difference between it and Windows' file format?
+Q: What is ELF? What is the difference between it and Windows' file format?
 
-	Q: How to apply multi-threads method on printing A and B simultaneously?
+Q: How to apply multi-threads method on printing A and B simultaneously?
 
-	Q: How to port Linux to a new hardware?
+Q: How to port Linux to a new hardware?
 	
-	Q: How does irq work?
+Q: How does irq work?
 
-	Q: How to solve the sound problem(no sound within Vmware) of Vmware? 
+Q: How to solve the sound problem(no sound within Vmware) of Vmware? 
 
-	Q: How does qv4l2 work? Can I learn something from it?
+Q: How does qv4l2 work? Can I learn something from it?
 
-	Q: How to get the coordinate of N900 touch panel?
+Q: How to get the coordinate of N900 touch panel?
 
-	Q: How to make a GTK program?	
+Q: How to make a GTK program?	
 
-	Q: What is the working principle of wine?
+Q: What is the working principle of wine?
 
-	Q: What is udev?
-
-	Q: How to input/show Chinese characters in Linux?
+Q: What is udev?
 
 Q: How does C++ realize OOP?
 
-	Q: What is template in C++?
+Q: What is template in C++?
 
 Q: How to static link Qt exe file? So that we don't need the related DLL files.
 
-	Q: What is Qt Texture?
+Q: What is Qt Texture?
 
-	Q: How to make a Qt container program?
+Q: How to make a Qt container program?
 
 Q: Where is N900's serial port?
 
@@ -52,9 +52,11 @@ Q(Physics): Why the nuclear fission is stable? How to control it?
 
 Q(Biology): Why does mule cannot breed?
 
-
 	Q: How to append new content to existing file?
 	A: for example, cat "hello new line" >> existing_file
 	
 	Q: How to send email in Linux?
 	A: mailx & mutt, refer to scrapbook
+
+	Q: How to input/show Chinese characters in Linux?
+	A: IBus and gvim, refer to scrapbook

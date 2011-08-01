@@ -1,0 +1,1 @@
+mutt -s "questions" tom.xue@nokia.com < noQuestion_noAspirationToStudy.txt

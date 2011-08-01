@@ -22,8 +22,6 @@ Q: How does Linux work?
 
 	Q: What is udev?
 
-	Q: How to send email in Linux?
-
 	Q: How to input/show Chinese characters in Linux?
 
 Q: How does C++ realize OOP?
@@ -57,4 +55,6 @@ Q(Biology): Why does mule cannot breed?
 
 	Q: How to append new content to existing file?
 	A: for example, cat "hello new line" >> existing_file
-
+	
+	Q: How to send email in Linux?
+	A: mailx & mutt, refer to scrapbook

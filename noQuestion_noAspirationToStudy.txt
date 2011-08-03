@@ -1,17 +1,22 @@
+
 No question, no aspiration to study.
 
 Q: How does computer work? What is the working principle?
 
 Q: How does Linux work?
 
+Q: How to port Linux to a new hardware platform?
+	
 Q: How to setup a workable Linux system? 
+
+Q: How to use iwconfig?
+
+Q: How to use mke2fs?
 
 Q: What is ELF? What is the difference between it and Windows' file format?
 
 Q: How to apply multi-threads method on printing A and B tasks simultaneously?
 
-Q: How to port Linux to a new hardware platform?
-	
 Q: How does irq work?
 
 Q: How to solve the sound problem(no sound inside of Vmware) of Vmware? 
@@ -62,4 +67,7 @@ Q: Why does mule cannot breed?
 	A: IBus and gvim, refer to scrapbook
 
 	Q: Where to download vim plug-in? How to install the vim plug-in?
-	A: From the website http://www.vim.org/scripts, you can find all the vim plug-in. c-support.vim was installed, refer to its README about installation.	
+	A: From the website http://www.vim.org/scripts, you can find all the vim plug-in. c-support.vim was installed, refer to its README about installation.
+
+	Q: How to do arithmetic operations in Linux shell?
+	A: 4 kinds of methods, e.g. expr, let, $(( )), $[ ]

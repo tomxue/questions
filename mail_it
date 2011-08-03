@@ -1,15 +1,12 @@
-str1="There are "
 num1=$(grep -r "Q:" noQuestion_noAspirationToStudy.txt | wc -l)
 num2=$(grep -r "A:" noQuestion_noAspirationToStudy.txt | wc -l)
 num3=$(( num1 - num2 ))
-str2=" questions."
-str3=" answers."
-str4="There are remaining "
-result_A=$str1$num2$str3
-result_Remain=$str4$num3$str2
+result_A="There are "$num2" answers."
+result_Remain="There are remaining "$num3" questions."
+subject="Questions "$num3":"$num2
 touch tempfile
 echo $result_Remain >> tempfile
 echo $result_A >> tempfile 
 cat noQuestion_noAspirationToStudy.txt >> tempfile
-mutt -s "questions" tom.xue@nokia.com < tempfile
+mutt -s "$subject" tom.xue@nokia.com < tempfile
 rm tempfile

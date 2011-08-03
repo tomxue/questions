@@ -13,6 +13,8 @@ Q: How to use iwconfig?
 
 Q: How to use mke2fs?
 
+Q: What is the working principle of X Window?
+
 Q: What is ELF? What is the difference between it and Windows' file format?
 
 Q: How to apply multi-threads method on printing A and B tasks simultaneously?

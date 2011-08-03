@@ -1,9 +1,13 @@
 str1="There are total "
-num=$(cat noQuestion_noAspirationToStudy.txt  | wc -l)
-str2=" rows of this file."
-result=$str1$num$str2
+num1=$(grep -r "Q:" noQuestion_noAspirationToStudy.txt | wc -l)
+num2=$(grep -r "A:" noQuestion_noAspirationToStudy.txt | wc -l)
+str2=" questions."
+str3=" answers."
+result_Q=$str1$num1$str2
+result_A=$str1$num2$str3
 touch tempfile
-echo $result >> tempfile 
+echo $result_Q >> tempfile
+echo $result_A >> tempfile 
 cat noQuestion_noAspirationToStudy.txt >> tempfile
 mutt -s "questions" tom.xue@nokia.com < tempfile
 rm tempfile

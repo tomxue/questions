@@ -8,51 +8,49 @@ Q: How to setup a workable Linux system?
 
 Q: What is ELF? What is the difference between it and Windows' file format?
 
-Q: How to apply multi-threads method on printing A and B simultaneously?
+Q: How to apply multi-threads method on printing A and B tasks simultaneously?
 
-Q: How to port Linux to a new hardware?
+Q: How to port Linux to a new hardware platform?
 	
 Q: How does irq work?
 
-Q: How to solve the sound problem(no sound within Vmware) of Vmware? 
+Q: How to solve the sound problem(no sound inside of Vmware) of Vmware? 
 
 Q: How does qv4l2 work? Can I learn something from it?
 
-Q: How to get the coordinate of N900 touch panel?
+Q: How to get the coordinate data of N900 touch panel?
 
 Q: How to make a GTK program?	
 
 Q: What is the working principle of wine?
 
-Q: What is udev?
+Q: What is udev? What is the purpose of it?
 
 Q: How does C++ realize OOP?
 
 Q: What is template in C++?
 
-Q: How to statically link Qt exe file? So that we don't need the related DLL files.
-
-Q: What is Qt Texture?
+Q: How to statically link Qt exe file? So that we don't need the related big DLL files.
 
 Q: How to make a Qt container program?
 
-Q: Where is N900's serial port?
+Q: Where is the test pads' position of N900 serial port?
 
-Q: How to make a Java program?
+Q: How to make(IDE, compile, run) a simple Java program?
 
 Q: How to use aircrack to get the WIFI password?
 
 Q: What is the working principle of watch dog?
 
-Q(Rescue): How to self-protect in the earthquake?
+Q: How to self-protect in an earthquake?
 
-Q(Physics): What is the conversion efficiency of the solar cell?
+Q: What is the conversion efficiency of the solar cell?
 
-Q(Physics): How is the gravity field twisted?
+Q: How is the gravity field twisted?
 
-Q(Physics): Why the nuclear fission is stable? How to control it?
+Q: Why the nuclear fission is stable? How to control it?
 
-Q(Biology): Why does mule cannot breed?
+Q: Why does mule cannot breed?
 
 	Q: How to append new content to existing file?
 	A: for example, cat "hello new line" >> existing_file

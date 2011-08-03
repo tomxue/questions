@@ -1,1 +1,9 @@
-mutt -s "questions" tom.xue@nokia.com < noQuestion_noAspirationToStudy.txt
+str1="There are total "
+num=$(cat noQuestion_noAspirationToStudy.txt  | wc -l)
+str2=" rows of this file."
+result=$str1$num$str2
+touch tempfile
+echo $result >> tempfile 
+cat noQuestion_noAspirationToStudy.txt >> tempfile
+mutt -s "questions" tom.xue@nokia.com < tempfile
+rm tempfile

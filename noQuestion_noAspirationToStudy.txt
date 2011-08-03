@@ -1,8 +1,10 @@
-No question, no aspiration to study
+No question, no aspiration to study.
 
-Q: How does computer work? What is the principle?
+Q: How does computer work? What is the working principle?
 
 Q: How does Linux work?
+
+Q: How to setup a workable Linux system? 
 
 Q: What is ELF? What is the difference between it and Windows' file format?
 
@@ -28,7 +30,7 @@ Q: How does C++ realize OOP?
 
 Q: What is template in C++?
 
-Q: How to static link Qt exe file? So that we don't need the related DLL files.
+Q: How to statically link Qt exe file? So that we don't need the related DLL files.
 
 Q: What is Qt Texture?
 
@@ -60,3 +62,6 @@ Q(Biology): Why does mule cannot breed?
 
 	Q: How to input/show Chinese characters in Linux?
 	A: IBus and gvim, refer to scrapbook
+
+	Q: Where to download vim plug-in? How to install the vim plug-in?
+	A: From the website http://www.vim.org/scripts, you can find all the vim plug-in. c-support.vim was installed, refer to its README about installation.	

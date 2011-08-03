@@ -1,12 +1,8 @@
 num1=$(grep -r "Q:" noQuestion_noAspirationToStudy.txt | wc -l)
 num2=$(grep -r "A:" noQuestion_noAspirationToStudy.txt | wc -l)
 num3=$(( num1 - num2 ))
-result_A="There are "$num2" answers."
-result_Remain="There are remaining "$num3" questions."
-subject="Questions "$num3":"$num2
+subject="Questions   Q-"$num3" : A-"$num2
 touch tempfile
-echo $result_Remain >> tempfile
-echo $result_A >> tempfile 
 cat noQuestion_noAspirationToStudy.txt >> tempfile
 mutt -s "$subject" tom.xue@nokia.com < tempfile
 rm tempfile

@@ -6,3 +6,4 @@ touch tempfile
 cat noQuestion_noAspirationToStudy.txt >> tempfile
 mutt -s "$subject" tom.xue@nokia.com < tempfile
 rm tempfile
+rm /home/maemo/sent

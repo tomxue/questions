@@ -1,4 +1,5 @@
 No interesting question, no aspiration to study.
+To solve problem is like the Mine-Sweeping game: start to solve a problem, and meet more problems on the way, then solve them and go ahead, meet new problems...at last, a big field is known to you.
 
 Linux
 	Q: How does computer work? What is its working principle?
@@ -8,6 +9,8 @@ Linux
 	Q: How to port Linux to a new hardware platform?
 
 	Q: How to setup a workable Linux system? 
+	
+	Q: How to implement USB OTG in N900? Why only SW work can solve it?
 
 	Q: How to program in meltemi? 
 
@@ -16,8 +19,6 @@ Linux
 	Q: In what situation shall we use workqueue/timer/wait_queue?
 
 	Q: How to use iwconfig?
-
-	Q: How to use mke2fs?
 
 	Q: What is said in the Linux documentation?
 
@@ -74,11 +75,23 @@ Physics
 Biology
 	Q: Why does mule cannot breed?
 
+Project
+	Q: How to convert the projector signals to A/V signal?
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Purpose: To know which questions I had studied, to give the key word of the answer in Scrapbook, to exercise English...
 
+
+Q: What is the effect of assert on Aggy? 
+A: The display turns to black for a while, and then turns to white, then normal.
+
+Q: Why Aggy couldn be flashed?
+A: RDC is a key factor, it should be flashed first.
+
+Q: What is the difference between interrupt gate and trap gate?
+A: interrupt gate is to catch interrupt; trap gate is to catch exception.
 
 Q: How to append new content to existing file?
 A: for example, cat "hello new line" >> existing_file
@@ -112,6 +125,27 @@ A: They are both boot loader.
 BIOS -> MBR:512 Bytes(IPL: initial program loader + Partition Table) -> secondary boot loader.
 (1) GRUB is more powerful and flexible than LILO. (2) LILO has no interactive command interface, but GRUB has. (3) LILO does not support boot from network, but GRUB does. (4) LILO stores the OS position info into MBR, so if we modify LILO, we need to rewrite the IPL into MBR again. This is unsafe, and GRUB does not do so. GRUB will switch to a command interface if its configuration file is wrong, and user could boot OS manually.
 
-Q: How to use fdisk/gparted?
-A: To install gparted, run the command: sudo apt-get install gparted. gparted is like PQmagic of Windows and it is quite easy to use. 
-	
+Q: How to use gparted?
+A: To install gparted, run the command: sudo apt-get install gparted. gparted is like PQmagic of Windows and it is quite easy to use. 	
+
+Q: How to use mke2fs?
+A: (1) check where the u-disk is mounted (2) umount it (3) mke2fs /dev/sdb1 (4) mount it to some path, e.g. sudo mount /8G_Flash /dev/sdb1
+
+Q: What is fsck command? How to use it?
+A: fsck is to check and repair a Linux file system. E.g. sudo fsck -t ext3 /dev/sda3, and remember that before fsck, sudo umount /dev/sda3
+
+Q: How to apply lilo.conf?
+A: LILO is LInux LOader. LILO can be installed into MBR or Linux root partition. User can modify /etc/lilo.conf to control LILO. For example,
+boot = /dev/hda
+vga = normal
+read-only
+prompt
+default = dos
+timeout = 30
+append="hdc=ide-scsi"
+image = /boot/vmlinuz
+label = linux
+root = /dev/hda2
+initrd = /boot/initrd 
+
+Any change of lilo.conf, upgrade of kernel or reconstruction of initrd, user should run /sbin/lilo again to make LILO to be written into the partition.

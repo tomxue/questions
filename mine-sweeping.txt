@@ -46,7 +46,13 @@ C++
 	Q: How does C++ realize OOP?
 
 	Q: What is template in C++?
+	
+	Q: What is STL?
+	A: STL is Standard Template Library, it is for reusability and its design philosophy is generic programming. And it is like the case of MFC and VCL.
 
+	Q: What is EJB?
+	A: EJB is Enterprise JavaBean. 
+	
 Java
 	Q: How to make(IDE, compile, run) a simple Java program?
 
@@ -87,7 +93,7 @@ Purpose: To know which questions I had studied, to give the key word of the answ
 Q: What is the effect of assert on Aggy? 
 A: The display turns to black for a while, and then turns to white, then normal.
 
-Q: Why Aggy couldn be flashed?
+Q: Why Aggy could not be flashed?
 A: RDC is a key factor, it should be flashed first.
 
 Q: What is the difference between interrupt gate and trap gate?
@@ -123,13 +129,20 @@ A: It is byte-order mark, used to mark the encoding type of unicode file.
 Q: What is LILO and GRUB? Where are they stored? And what is the difference between them?
 A: They are both boot loader. 
 BIOS -> MBR:512 Bytes(IPL: initial program loader + Partition Table) -> secondary boot loader.
-(1) GRUB is more powerful and flexible than LILO. (2) LILO has no interactive command interface, but GRUB has. (3) LILO does not support boot from network, but GRUB does. (4) LILO stores the OS position info into MBR, so if we modify LILO, we need to rewrite the IPL into MBR again. This is unsafe, and GRUB does not do so. GRUB will switch to a command interface if its configuration file is wrong, and user could boot OS manually.
+(1) GRUB is more powerful and flexible than LILO. 
+(2) LILO has no interactive command interface, but GRUB has. 
+(3) LILO does not support boot from network, but GRUB does. 
+(4) LILO stores the OS position info into MBR, so if we modify LILO, we need to rewrite the IPL into MBR again. This is unsafe, and GRUB does not do so. GRUB will switch to a command interface if its configuration file is wrong, and user could boot OS manually.
 
 Q: How to use gparted?
 A: To install gparted, run the command: sudo apt-get install gparted. gparted is like PQmagic of Windows and it is quite easy to use. 	
 
 Q: How to use mke2fs?
-A: (1) check where the u-disk is mounted (2) umount it (3) mke2fs /dev/sdb1 (4) mount it to some path, e.g. sudo mount /8G_Flash /dev/sdb1
+A:
+(1) check where the u-disk is mounted 
+(2) umount it 
+(3) mke2fs /dev/sdb1 
+(4) mount it to some path, e.g. sudo mount /8G_Flash /dev/sdb1
 
 Q: What is fsck command? How to use it?
 A: fsck is to check and repair a Linux file system. E.g. sudo fsck -t ext3 /dev/sda3, and remember that before fsck, sudo umount /dev/sda3
@@ -149,3 +162,24 @@ root = /dev/hda2
 initrd = /boot/initrd 
 
 Any change of lilo.conf, upgrade of kernel or reconstruction of initrd, user should run /sbin/lilo again to make LILO to be written into the partition.
+
+Q: What kinds of Linux Desktop Environment do we have?
+A: KDE, Gnome, Xfce, LXDE, etc.
+(1) KDE is earliest, originated by Lynx' inventor, and it owns KOffice. 
+(2) Gnome focuses on internationalization. 
+(3) Xfce is a lightweight desktop environment, and its target is to improve the system efficiency. The main feature of Xfce is that it can be easily configed, and it has a window manager called XFwm. 
+(4) LXDE is developed mainly by Taiwan guys, and its main feature is to be pragmatic, light and handy. In addition, LXDE can be run in very old machine, e.g. produced in 1999.
+
+Q: What is class library?
+A: e.g. MFC, VCL, STL
+
+Q: What is VCL?
+A: Visual Component Library, it is the basic class library of Delphi, C++ Builder. And it is platform independence, e.g. Windows, Linux, MacOS.
+
+Q: What is EJB?
+A: Enterprise JavaBeans (EJB) technology is the server-side component architecture for Java Platform, Enterprise Edition (Java EE). EJB technology enables rapid and simplified development of distributed, transactional, secure and portable applications based on Java technology.
+
+Q: What is the difference between Frame Buffer and X?
+A: 
+(1) X is a protocol, and it has X server and X client. X client requests to draw, and X server draws it.
+(2) FrameBuffer is a driver interface, and it abstracts the display as frame buffer. User can regard it as the image of display memory. And after mmap to the user space, user can operate it directly.

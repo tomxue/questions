@@ -1,0 +1,14 @@
+num1=$(grep -r "Q:" mine-sweeping.txt | wc -l)
+num2=$(grep -r "A:" mine-sweeping.txt | wc -l)
+num3=$(( num1 - num2 ))
+subject="mine-sweeping   Q-"$num3" : A-"$num2
+touch tempfile
+cat mine-sweeping.txt >> tempfile
+echo $subject
+mutt -s "$subject" tom.xue@nokia.com < tempfile
+rm tempfile
+cat mine-sweeping.txt | tail >> tempfile
+subject="mine-sweeping   Q-"$num3" : A-"$num2"   tail"
+mutt -s "$subject" tom.xue@nokia.com < tempfile
+rm tempfile
+rm /home/maemo/sent

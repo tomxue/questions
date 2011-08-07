@@ -1,0 +1,12 @@
+#!/bin/bash
+
+linenum=`wc   -l   mine-sweeping.txt|   awk   '{print   $1} '`
+n1=1
+file=1
+while   [   $n1   -lt   $linenum   ]
+do
+                n2=`expr   $n1   +   150`
+                sed   -n   "${n1},   ${n2}p "   mine-sweeping.txt   >   file$file  
+                n1=`expr   $n2   +   1`
+                file=`expr   $file   +   1`
+done

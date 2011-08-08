@@ -41,17 +41,18 @@ Linux
 	Q: What is the working principle of wine?
 
 	Q: What is udev? What is the purpose of it?
+	
+	Q: What is the difference between FILE and file?
+
+FreeBSD
+	Q: How to install FreeBSD?
+
+	Q: What is FreeBSD? What is the difference between FreeBSD and Linux?
 
 C++
 	Q: How does C++ realize OOP?
 
 	Q: What is template in C++?
-	
-	Q: What is STL?
-	A: STL is Standard Template Library, it is for reusability and its design philosophy is generic programming. And it is like the case of MFC and VCL.
-
-	Q: What is EJB?
-	A: EJB is Enterprise JavaBean. 
 	
 Java
 	Q: How to make(IDE, compile, run) a simple Java program?
@@ -183,3 +184,40 @@ Q: What is the difference between Frame Buffer and X?
 A: 
 (1) X is a protocol, and it has X server and X client. X client requests to draw, and X server draws it.
 (2) FrameBuffer is a driver interface, and it abstracts the display as frame buffer. User can regard it as the image of display memory. And after mmap to the user space, user can operate it directly.
+
+Q: What is the difference of single quotes, double quotes and backticks?
+A: 
+(1) When shell meets the first single quote, it will ignore all the special symbol untill it meets the second single quote.
+(2) Shell won't ignore 3 symbols, they are $, \, `.
+(3) The backticks are for shell command replacement.
+
+Q: What is the difference between source and exec commands?
+A: exec will close current shell, and then continue to execute the later commands. And source command will execute in current shell but will not close it.
+
+Q: What is the difference between pointer array and array pointer?
+A: pointer array is an array pointers, array pointer is a pointer to an array.
+
+Q: What is the difference between function pointer and pointer function?
+A: 
+(1) function pointer is for example, int (*f)(int x); It means a pointer points a function. The type of the function's return value must be same as the function pointer's type, e.g. int here. And user can invoke the function by *f.
+(2) pointer function is for example, int *f(x，y); The function will return a pointer, and the pointer points to an interger.
+
+Q: What is thread pool? What is its purpose?
+A: Thread pool means there are some created threads, and they are in the free waiting state in the beginning. When there is new task, a free thread will be picked up to handle the task. And after finish, the thread will return to the thread pool to wait for new task.
+The benefit of thread pool is the reuse of thread, no need to destroy and recreate a thread.
+
+Q: How to make a size limited directory in Linux?
+A: 
+dd if=/dev/zero of=/home/test.img bs=1M count=1024
+losetup /dev/loop1 /home/test.img
+mkfs.ext4 /dev/loop1
+mount /dev/loop1 ~/limitedDir
+
+Q: What is loop device?
+A: It can associate a file with a file system. It can be formatted and mounted.
+
+Q: What is STL?
+A: STL is Standard Template Library, it is for reusability and its design philosophy is generic programming. And it is like the case of MFC and VCL.
+
+Q: What is EJB?
+A: EJB is Enterprise JavaBean. 

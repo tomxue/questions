@@ -1,16 +1,16 @@
 #!/bin/bash
 
-num1=$(grep -r "Q:" mine-sweeping.txt | wc -l)
-num2=$(grep -r "A:" mine-sweeping.txt | wc -l)
+num1=$(grep -r "Q:" mine-sweeping | wc -l)
+num2=$(grep -r "A:" mine-sweeping | wc -l)
 num3=$(( num1 - num2 ))
 
-linenum=`wc   -l   mine-sweeping.txt|   awk   '{print   $1} '`
+linenum=`wc   -l   mine-sweeping | awk   '{print   $1}'`
 n1=1
 file=1
 while   [   $n1   -lt   $linenum   ]
 do
 	n2=`expr   $n1   +   150`
-	sed   -n   "${n1},   ${n2}p "   mine-sweeping.txt   >   file$file  
+	sed   -n   "${n1},   ${n2}p "   mine-sweeping   >   file$file  
 
 	subject="mine-sweeping   Q-"$num3" : A-"$num2"   file"$file
 	touch tempfile
@@ -25,3 +25,5 @@ do
 done
 
 rm /home/maemo/sent
+
+./scrapbook_statistics

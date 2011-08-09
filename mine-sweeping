@@ -220,4 +220,7 @@ Q: What is STL?
 A: STL is Standard Template Library, it is for reusability and its design philosophy is generic programming. And it is like the case of MFC and VCL.
 
 Q: What is EJB?
-A: EJB is Enterprise JavaBean. 
+A: EJB is Enterprise JavaBean.
+
+Q: What is the difference between file descriptor and file pointer?
+A: File pointer points FILE struct, and FILE struct contains file descriptor and a buffer. A file descriptor points to a file descriptor list. 

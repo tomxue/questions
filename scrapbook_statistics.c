@@ -33,7 +33,7 @@ main(int argc, char *argv[])
 	fd=open("asterisk.txt",O_RDWR |  O_TRUNC | O_APPEND,0777);
 	if(fd<0)
 		printf("Open file asterisk.txt failed!\n");
-	
+
 	for(i_mon=0;i_mon<NumofMons;i_mon++)
 	{
 		for(j_day=0;j_day<NumofDays;j_day++)

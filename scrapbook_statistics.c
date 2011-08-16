@@ -86,7 +86,7 @@ main(int argc, char *argv[])
 				pclose(streamCmd);
 				
 				times = times + 1;
-				if(times > 20)
+				if(times > 18)
 					goto end;
 		}
 				

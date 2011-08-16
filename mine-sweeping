@@ -1,5 +1,5 @@
 No interesting question, no aspiration to study.
-To solve problem is like the Mine-Sweeping game: start to solve a problem, and meet more problems on the way, then solve them and go ahead, meet new problems...at last, a big field is known to you.
+To solve problem is like the Mine-Sweeping game: start to solve a problem, and meet more problems on the way of pursuing your interest, then solve them and go ahead, meet new problems...at last, a big field is known to you.
 
 Linux
 	Q: How does computer work? What is its working principle?
@@ -10,8 +10,6 @@ Linux
 
 	Q: How to setup a workable Linux system? 
 	
-	Q: How to implement USB OTG in N900? Why only SW work can solve it?
-
 	Q: How to program in meltemi? 
 
 	Q: What is the difference between meltemi and Linux?
@@ -44,6 +42,10 @@ Linux
 	
 	Q: What is the difference between FILE and file?
 
+	Q: How does uboot work? How to compile it?
+
+	Q: How does luvcview work? To analyze its source code...
+
 FreeBSD
 	Q: How to install FreeBSD?
 
@@ -67,6 +69,10 @@ HW
 
 	Q: What is the working principle of watch dog?
 
+	Q: What is USB OTG?
+
+	Q: What is ULPI interface?
+
 App
 	Q: How to use aircrack to get the WIFI password?
 
@@ -83,8 +89,7 @@ Biology
 	Q: Why does mule cannot breed?
 
 Project
-	Q: How to convert the projector signals to A/V signal?
-
+	
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -223,4 +228,36 @@ Q: What is EJB?
 A: EJB is Enterprise JavaBean.
 
 Q: What is the difference between file descriptor and file pointer?
-A: File pointer points FILE struct, and FILE struct contains file descriptor and a buffer. A file descriptor points to a file descriptor list. 
+A: File pointer points FILE struct, and FILE struct contains file descriptor and a buffer. A file descriptor points to a file descriptor list.
+
+Q: What is process context?
+A: When a process is running, all the CPU registers' value, process state and the content of the stack/heap are belong to process context. More details, refer to the Scrapbook.
+
+Q: What is the purpose of system call?
+A: The user space application goes into the kernel space via system call.
+
+Q: Why a Linux interrupt cannot go into sleep?
+A: An interrupt is not the schdule unit. So when an interrupt goes into sleep, it cannot switch its context, otherwise its state will be lost.
+And no one will wake it uo if it goes into sleep.
+At last, if an interrupt goes into sleep, and during the period, another interrupt occurs, then it will be blocked and cause the interrupt stack overflow. This will finally cause the OS crash.
+
+Q: What is kernel-power of maemo? What is the difference between it and PR1.3? How to install it?
+A: The enhanced kernel "kernel-power" is compatible with PR1.2 and PR1.3, contain lots of additional features (IPv6, NAT etc) and bugfixes. The kernel can be installed via Application manager from the System section. Installation of the customization package Kernel-Power-Settings is sufficient, as it depends on the kernel page.
+
+Q: What is QoS?
+A: In the field of computer networking and other packet-switched telecommunication networks, the traffic engineering term quality of service (QoS) refers to resource reservation control mechanisms rather than the achieved service quality. Quality of service is the ability to provide different priority to different applications, users, or data flows, or to guarantee a certain level of performance to a data flow.
+
+Q: What is packet switching?
+A: A packet switched network does not require this ‘rigid’ link. Communication between nodes is established and maintained by an intermittent flow of small portions of data through one or many different paths. The path taken by each portion of data or packet may depend on the status of links, or algorithms used by switching equipment. Switching is carried out by special nodes on the network which govern the flow of data. Such devices include switches, routers and bridges.
+
+Q: What is NRZI? What is its advantage?
+A: NRZI is Non-return-to-zero Code. Advantage: (1) Don't need a clock signal. (2) Even it is inverted, the signal sequence it represents is same. (3) In USB protocol, it will issue a SYNC field first so that the receiver can extracts the clock signal...
+
+Q: How to implement USB OTG in N900? Why only SW work can solve it?
+A: By applying "h-e-n" to enable the USB OTG function in N900. As for the hardware of N900, the USB ID pin is connected to GAIA directly, but not connected to ISP1707AET which is a USB transceiver. So there should be software trick to treat the N900 processor about the ID signal.
+
+Q: Is there the chip that can convert the AV signal to RGB signals?
+A: ADV7403, check the "Figure 9. ADV7403 Typical Connection Diagram" and CVBS input.
+
+Q: How to enable N900' USB OTG?
+A: h-e-n

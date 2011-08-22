@@ -24,6 +24,6 @@ do
 	file=`expr   $file   +   1`
 done
 
-rm /home/maemo/sent
-
 ./scrapbook_statistics
+
+rm /home/maemo/sent

@@ -12,7 +12,7 @@ main(int argc, char *argv[])
 	char myCmd1[57] = "find /mnt/hgfs/Dropbox/ScrapBook/data/ -maxdepth 1 -name ";
 	char myCmd2[8] = " | wc -l";
 	char myCmd[75];
-	char myCmd3[] = "mutt -s \"statistics\" tom.xue@nokia.com < asterisk.txt"; 
+	char myCmd3[] = "mutt -s \"mine-sweeping   statistics\" tom.xue@nokia.com < asterisk.txt"; 
 	int i_mon, j_day, k, ret, bigNum;
 	time_t timep;
 	struct tm *p;

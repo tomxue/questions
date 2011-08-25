@@ -1,29 +1,35 @@
 #!/bin/bash
 
-num1=$(grep -r "Q:" mine-sweeping | wc -l)
-num2=$(grep -r "A:" mine-sweeping | wc -l)
-num3=$(( num1 - num2 ))
+#num1=$(grep -r "Q:" mine-sweeping | wc -l)
+#num2=$(grep -r "A:" mine-sweeping | wc -l)
+#num3=$(( num1 - num2 ))
 
-linenum=`wc   -l   mine-sweeping | awk   '{print   $1}'`
-n1=1
-file=1
-while   [   $n1   -lt   $linenum   ]
-do
-	n2=`expr   $n1   +   150`
-	sed   -n   "${n1},   ${n2}p "   mine-sweeping   >   file$file  
+#linenum=`wc   -l   mine-sweeping | awk   '{print   $1}'`
+#n1=1
+#file=1
+#while   [   $n1   -lt   $linenum   ]
+#do
+#	n2=`expr   $n1   +   150`
+#	sed   -n   "${n1},   ${n2}p "   mine-sweeping   >   file$file  
 
-	subject="mine-sweeping   Q-"$num3" : A-"$num2"   file"$file
-	touch tempfile
-	cat file$file >> tempfile
-	echo $subject
-	mutt -s "$subject" tom.xue@nokia.com < tempfile
-	rm tempfile
-	rm file$file	                
+#	subject="mine-sweeping   Q-"$num3" : A-"$num2"   file"$file
+#	touch tempfile
+#	cat file$file >> tempfile
+#	echo $subject
+#	mutt -s "$subject" tom.xue@nokia.com < tempfile
+#	rm tempfile
+#	rm file$file	                
 
-	n1=`expr   $n2   +   1`
-	file=`expr   $file   +   1`
-done
+#	n1=`expr   $n2   +   1`
+#	file=`expr   $file   +   1`
+#done
 
-./scrapbook_statistics
+#./scrapbook_statistics
 
 rm /home/maemo/sent
+
+num4=$(echo $RANDOM)
+num5=32767
+totalinenum=`wc   -l   mine-sweeping | awk   '{print   $1}'`
+linenum=$[ 1 + totalinenum * num4 / num5 ]
+sed -n ""$linenum"p" mine-sweeping

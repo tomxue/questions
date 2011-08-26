@@ -26,7 +26,7 @@
 
 #./scrapbook_statistics
 
-rm /home/maemo/sent
+#rm /home/maemo/sent
 
 num4=$(echo $RANDOM)
 num5=32767

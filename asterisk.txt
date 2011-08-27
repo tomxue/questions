@@ -1,5 +1,6 @@
-Q: What is the working principle of watch dog?
-
+Q: How to change the N900's touch panel from resistive type to capacitive type?
++
++++
 +++
 +++++++
 ++++++
@@ -17,4 +18,3 @@ Q: What is the working principle of watch dog?
 +++
 ++++++++++++
 +++++++++++
-++++++++++++++

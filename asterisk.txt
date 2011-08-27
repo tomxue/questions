@@ -1,4 +1,4 @@
-Q: How to change the N900's touch panel from resistive type to capacitive type?
+Q: How does Linux work?
 +
 +++
 +++

@@ -1,4 +1,4 @@
-Q: (first question) How does computer work? What is its working principle?
+Q: How does computer work? What is its working principle?
 Q: How does Linux work?
 Q: How to port Linux to a new hardware platform?
 Q: How to setup a workable Linux system? 
@@ -8,19 +8,17 @@ Q: In what situation shall we use workqueue/timer/wait_queue?
 Q: How to use iwconfig?
 Q: What is said in the Linux documentation?
 Q: What is the working principle of X Window?
-Q: What is ELF? What is the difference between it and Windows' file format?
 Q: How to apply multi-threads method on printing A and B tasks simultaneously?
 Q: How does irq work?
-Q: How to solve the sound problem(no sound) of Vmware? 
+Q: How to solve the sound problem(no sound) of Vmware?
+Q: How to solve the date display problem(always show BST time zone) of Vmware? 
 Q: How does qv4l2 work?
 Q: How does luvcview work? To analyze its source code...
 Q: How to make a v4l application from scratch?
-Q: How to change the N900's touch panel from resistive type to capacitive type?
 Q: How to get the coordinate data of N900 touch panel?
 Q: How to make a GTK program?	
 Q: What is the working principle of wine?
 Q: What is udev? What is the purpose of it?
-Q: What is the difference between FILE and file?
 Q: How does uboot work? How to compile it?
 Q: How to install FreeBSD?
 Q: What is FreeBSD? What is the difference between FreeBSD and Linux?
@@ -29,13 +27,13 @@ Q: What is template in C++?
 Q: How to make(IDE, compile, run) a simple Java program?
 Q: How to statically link Qt exe file? So that we don't need the related big DLL files.
 Q: How to make a Qt container program?
-Q: Where is the test pads' position of N900 serial port?
-Q: What is the working principle of watch dog?
-Q: What is ULPI interface?
 Q: How to use aircrack to get the WIFI password?
-Q: (Physics) What is the conversion efficiency of the solar cell?
+Q: How to change the N900's touch panel from resistive type to capacitive type?
+Q: How to make N9's FM radio work?
+Q: (Hardware) Where is the test pads' position of N900 serial port?
+Q: How to use Bluetooth serial port?
+Q: How to make a parallel port program under Linux?
 Q: (Physics) How is the gravity field twisted?
 Q: (Physics) What is space-time? What is the relationship between them?
 Q: (Physics) Why the nuclear fission is stable? How to control it?
-Q: (Biology) Why does mule cannot breed?
-Q: (last question) How to use Bluetooth serial port?
+Q: (Biology) Why do the dinosaur and human being have different scale?

@@ -1,0 +1,11 @@
+#!/bin/bash
+a=0
+loop (){
+       if [[ $a -lt 10 ]]; then
+              ./scrapbook_statistics
+              ((a=$a+1))
+              loop
+       fi
+}
+
+loop

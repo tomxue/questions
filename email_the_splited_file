@@ -1,18 +1,18 @@
 #!/bin/bash
 
-#num1=$(grep -r "Q:" mine-sweeping | wc -l)
-#num2=$(grep -r "A:" mine-sweeping | wc -l)
+#num1=$(grep -r "Q:" stay_foolish | wc -l)
+#num2=$(grep -r "A:" stay_foolish | wc -l)
 #num3=$(( num1 - num2 ))
 
-#linenum=`wc   -l   mine-sweeping | awk   '{print   $1}'`
+#linenum=`wc   -l   stay_foolish | awk   '{print   $1}'`
 #n1=1
 #file=1
 #while   [   $n1   -lt   $linenum   ]
 #do
 #	n2=`expr   $n1   +   150`
-#	sed   -n   "${n1},   ${n2}p "   mine-sweeping   >   file$file  
+#	sed   -n   "${n1},   ${n2}p "   stay_foolish   >   file$file  
 
-#	subject="mine-sweeping   Q-"$num3" : A-"$num2"   file"$file
+#	subject="stay_foolish   Q-"$num3" : A-"$num2"   file"$file
 #	touch tempfile
 #	cat file$file >> tempfile
 #	echo $subject
@@ -30,6 +30,6 @@
 
 num4=$(echo $RANDOM)
 num5=32767
-totalinenum=`wc   -l   mine-sweeping | awk   '{print   $1}'`
+totalinenum=`wc   -l   stay_foolish | awk   '{print   $1}'`
 linenum=$[ 1 + totalinenum * num4 / num5 ]
-sed -n ""$linenum"p" mine-sweeping
+sed -n ""$linenum"p" stay_foolish

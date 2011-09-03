@@ -15,8 +15,8 @@ main(int argc, char *argv[])
 	char clear_cmd[] = "clear";
 	char myCmd3[] = "./email_the_splited_file >> asterisk.txt"; 
 	char myCmd4[] = "cat asterisk.txt";		
-	char myCmd5[] = "mutt -s \"mine-sweeping   statistics\" tom.xue@nokia.com < asterisk.txt";
-//	char myCmd5[] = "mutt -s \"mine-sweeping   statistics\" -a mine-sweeping.png -- tom.xue@nokia.com < asterisk.txt";
+	char myCmd5[] = "mutt -s \"stay_foolish   statistics\" tom.xue@nokia.com < asterisk.txt";
+//	char myCmd5[] = "mutt -s \"stay_foolish   statistics\" -a stay_foolish.png -- tom.xue@nokia.com < asterisk.txt";
 	
 	int i_mon, j_day, k, ret, bigNum;
 	time_t timep;

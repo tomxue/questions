@@ -1,7 +1,20 @@
-Q: How to make(IDE, compile, run) a simple Java program?
+Q: What is the working principle of wine?
+
+++
+++++++++
+
++
 +++++
 +++++++++++
 ++++++++++++++
 +++
 +++
 +++++++
+++++++
+++
+++++++++++++
+
+++++
+++
++++
+++++++++
